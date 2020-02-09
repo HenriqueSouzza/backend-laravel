@@ -11,8 +11,6 @@
 |
 */
 
-// Route::prefix('atividadescomplementares')->group(function() {
-
-    // Route::post('/atividadescomplementares/alunos', 'Api\AlunosInscritosController@index');
-
-// });
+Route::prefix('atividadescomplementares')->group(function() {
+    Route::get('/', 'AtividadesComplementaresController@index');
+});

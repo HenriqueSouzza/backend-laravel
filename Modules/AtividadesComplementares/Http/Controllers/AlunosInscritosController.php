@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class AtividadesComplementaresController extends Controller
+class AlunosInscritosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,6 @@ class AtividadesComplementaresController extends Controller
     {
         $array = [
             0 => 'teste',
-            1 => 'auxiliadora'
         ]; 
 
         $result = json_encode($array);

@@ -17,8 +17,11 @@ Route::middleware('auth:api')->get('/atividadescomplementares', function (Reques
     return $request->user();
 });
 
-// Route::group(['middleware' => ['auth:api' /*, 'check.user.acl'*/]], function(){
 
-    Route::post('/atividadescomplementares/alunos', 'Api\AlunosInscritosController@index');
+// Route::group(['middleware' => ['auth:api' /*, 'check.user.acl'*/]], function(){
+    
+    Route::post('atividades','AtividadesComplementaresController@index');
+
+    Route::get('alunos','AlunosInscritosController@index');
 
 // });
