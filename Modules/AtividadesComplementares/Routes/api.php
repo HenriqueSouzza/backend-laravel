@@ -20,8 +20,8 @@ Route::middleware('auth:api')->get('/atividadescomplementares', function (Reques
 
 // Route::group(['middleware' => ['auth:api' /*, 'check.user.acl'*/]], function(){
     
-    Route::post('atividades','AtividadesComplementaresController@index');
+    Route::post('atividadescomplementares/grupos-atividades','GruposAtividadesController@index');
 
-    Route::get('alunos','AlunosInscritosController@index');
+    Route::get('atividadescomplementares/alunos','AlunosInscritosController@index');
 
 // });
