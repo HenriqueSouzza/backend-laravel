@@ -32,10 +32,9 @@ trait ApiControllerTrait
      */
     public function index(Request $resquest)
     {
-
         //limita a quantidade de itens por pagina pega 15 por padrão 
         $limit = $request->all()['limit'] ?? 15;
-     
+        
         //possibilita a ordenação de itens 
         $order = $request->all()['order'] ?? null;
 
