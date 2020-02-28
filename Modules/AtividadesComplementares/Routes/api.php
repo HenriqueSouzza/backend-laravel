@@ -17,11 +17,12 @@ Route::middleware('auth:api')->get('/atividadescomplementares', function (Reques
     return $request->user();
 });
 
-
 // Route::group(['middleware' => ['auth:api' /*, 'check.user.acl'*/]], function(){
-    
-    Route::get('atividadescomplementares/grupos-atividades','GruposAtividadesController@index');
 
-    Route::get('atividadescomplementares/alunos-inscritos','AlunosInscritosController@index');
+    // Route::resources([
+    //     'atividadescomplementares/alunos-inscritos' => 'AlunosInscritosController'
+    // ]);
+
+    Route::get('/atividadescomplementares/grupos-atividades','GruposAtividadesController@index');
 
 // });

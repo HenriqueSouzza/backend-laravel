@@ -8,6 +8,17 @@ use Illuminate\Routing\Controller;
 
 class GruposAtividadesController extends Controller
 {
+
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        
+    }
+
     /**
      * Display a listing of the resource.
      * @return Response
